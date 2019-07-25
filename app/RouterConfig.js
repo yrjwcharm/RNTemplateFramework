@@ -54,7 +54,7 @@ const AppNavigator = createStackNavigator({
         }
     },
     {
-        initialRouteName: "Register",
+        initialRouteName: "Splash",
         headerMode: 'none',
         defaultNavigationOptions: {
             headerVisible: false
