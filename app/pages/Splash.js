@@ -56,6 +56,7 @@ export default class Splash extends PureComponent {
 const errorHandler = (e, isFatal) => {
     if (isFatal) {
         if(__DEV__){
+            console.log('error',e.message);
             Alert.alert(
                 '异常捕获',
                 `${(isFatal) ? '严重BUG:' : ''}
