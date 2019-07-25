@@ -3,6 +3,7 @@ import {SafeAreaView,StyleSheet,Image,FlatList,Platform,BackHandler,View,Text,Te
 import Title from '../components/Title'
 import SmallButton from "../components/SmallButton";
 import {StringUtils} from "../utils";
+import {Input} from "teaset";
 export default class Register extends PureComponent {
     // 默认属性
     // 构造
@@ -33,6 +34,7 @@ export default class Register extends PureComponent {
         if(StringUtils.isEmpty(SMSCode)){
             Toast.info('请输入短信验证码');
         }
+        this.props.navigation.goBack();
     }
     // 渲染
     render() {
@@ -40,7 +42,7 @@ export default class Register extends PureComponent {
         return (
             <SafeAreaView style={{flex:1,backgroundColor:'#eee'}}>
                 <Title title="注册" />
-                <View style={{marginHorizontal:moderateScale(45),marginTop:moderateScale(11),borderRadius: scale(5),
+                <View style={{marginHorizontal:moderateScale(13),marginTop:moderateScale(11),borderRadius: scale(5),
                     backgroundColor: "#f5f5f5",
                     shadowColor: "rgba(0, 0, 0, 0.06)",
                     shadowOffset: {
@@ -66,4 +68,39 @@ export default class Register extends PureComponent {
         );
     }
 
+}
+const BuildInput1=(props)=>{
+    return(
+        <View style={{backgroundColor:'#f5f5f5',borderBottomWidth:StyleSheet.hairlineWidth,borderBottomColor:'#e6e6e6',paddingLeft:moderateScale(28),paddingRight:moderateScale(15),flexDirection:'row',justifyContent: 'space-between',alignItems:'center',height:verticalScale(44)}}>
+            <Text style={{fontFamily: "PingFangSC-Regular",
+                fontSize: moderateScale(13),
+                color: "#999999"}}>{props.name}</Text>
+            <Input style={{backgroundColor:'transparent',borderWidth:0,fontFamily: "PingFangSC-Regular",
+                fontSize: moderateScale(14),
+                textAlign:'left',
+                flex:1,
+                paddingLeft:moderateScale(33),
+                color: "#333333"}}   placeholder={props.placeholder} value={props.value} onChangeText={props.onChangeText}/>
+        </View>
+    );
+}
+const DefaultInput=(props)=>{
+    return(
+        <View style={{backgroundColor:'#F5F5F5',borderBottomWidth:StyleSheet.hairlineWidth,borderBottomColor:'#e6e6e6',paddingLeft:moderateScale(28),paddingRight:moderateScale(15),flexDirection:'row',justifyContent: 'space-between',alignItems:'center',height:verticalScale(44)}}>
+            <Text style={{fontFamily: "PingFangSC-Regular",
+                fontSize: moderateScale(13),
+                color: "#999999"}}>{props.name}</Text>
+            <Input style={{backgroundColor:'transparent',borderWidth:0,fontFamily: "PingFangSC-Regular",
+                fontSize: moderateScale(14),
+                textAlign:'left',
+                flex:1,
+                paddingLeft:moderateScale(33),
+                color: "#333333"}} placeholder={props.placeholder} value={props.value} onChangeText={props.onChangeText}/>
+            <TouchableOpacity activeOpacity={0.8} onPress={props.onPress}>
+                <View style={{backgroundColor:'#4a79e0'}}>
+                    <Text style={{fontSize:moderateScale(14),color:'#FFf',paddingHorizontal:moderateScale(12),paddingVertical:moderateScale(7)}}>验证码</Text>
+                </View>
+            </TouchableOpacity>
+        </View>
+    )
 }
