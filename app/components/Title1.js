@@ -35,10 +35,10 @@ const Title1 = (props) => {
                 <TouchableOpacity onPress={props.onPressForward} activeOpacity={0.8}>
                 <View style={{
                     opacity: 0.3,
-                    borderRadius: moderateScale(3),
+                    borderRadius: scale(3),
                     backgroundColor: "transparent",
                     borderStyle: "solid",
-                    borderWidth: moderateScale(1),
+                    borderWidth: scale(1),
                     borderColor: "#d7d7d7",
                 }}>
                     <Text style={{	fontFamily: "PingFangSC-Regular",
