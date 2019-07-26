@@ -55,7 +55,31 @@ const Image = {
     ykf:require('./images/ykf.png'),
     cwdz:require('./images/cwdz.png'),
     question:require('./images/question.png'),
-    generate_contract:require('./images/generate_contract.png')
+    generate_contract:require('./images/generate_contract.png'),
+    arrow_right:require('./images/arrow_right.png'),
+    circle:require('./images/circle.png'),
+    gray:require('./images/gray_dot.png'),
+    solid:require('./images/solid_dot.png'),
+    arrow_right_1:require('./images/arrow_right_1.png'),
+    config:require('./images/config.png'),
+    open:require('./images/open.png'),
+    close:require('./images/close.png'),
+    separator____1:require('./images/separator____1.png'),
+    edit___1:require('./images/edit____1.png'),
+    delete:require('./images/delete.png'),
+    credit_point:require('./images/credit_point.png'),
+    separator____________________1:require('./images/seaparator___________________________1.png'),
+    reward:require('./images/reward.png'),
+    edit_________________________1:require('./images/edit_______________________1.png'),
+    zjtg:require('./images/zjtg.png'),
+    cysh:require('./images/cysh.png'),
+    zjjj:require('./images/zjjj.png'),
+    rgsh:require('./images/rgsh.png'),
+    xy:require('./images/xy.png'),
+    dy:require('./images/dy.png'),
+    up:require('./images/up.png'),
+    down:require('./images/down.png'),
+    select:require('./images/select.png')
 
 };
 export default Image;

@@ -12,6 +12,7 @@ import ContractSign from "./pages/home/ContractSign";
 import FinancialReconciliation from "./pages/home/FinancialReconciliation";
 import BusinessQuery from "./pages/home/BusinessQuery";
 import Register from "./pages/Register";
+import ComprehensiveConfiguration from "./pages/home/ComprehensiveConfiguration";
 const AppNavigator = createStackNavigator({
         Splash:{
             screen:Splash,
@@ -51,6 +52,9 @@ const AppNavigator = createStackNavigator({
         },
         BusinessQuery:{
             screen:BusinessQuery
+        },
+        ComprehensiveConfiguration:{
+            screen:ComprehensiveConfiguration
         }
     },
     {
