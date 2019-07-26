@@ -24,7 +24,7 @@ export  default class App extends Component<Props> {
 
   componentDidMount() {
       let fontName = 'PingFang-SC-Regular'
-      GlobalFont.applyGlobal(fontName)
+       GlobalFont.applyGlobal(fontName)
   }
 
   render() {
