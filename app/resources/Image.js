@@ -79,7 +79,15 @@ const Image = {
     dy:require('./images/dy.png'),
     up:require('./images/up.png'),
     down:require('./images/down.png'),
-    select:require('./images/select.png')
+    select:require('./images/select.png'),
+    dropdown:require('./images/dbx.png'),
+    square_shtg:require('./images/square_shtg.png'),
+    square_xtjj:require('./images/square_xtjj.png'),
+    square_rgjj:require('./images/square_rgjj.png'),
+    message_____1:require('./images/message__1.png'),
+    message_dot:require('./images/msg_dot.png'),
+    right_arrow_1:require('./images/right-arrow.png'),
+    message_arrow_right:require('./images/message_right_arrow.png')
 
 };
 export default Image;
